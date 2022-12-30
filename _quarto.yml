@@ -5,7 +5,7 @@ website:
   title: "Yash Surange"
   site-url: https://ysurs.github.io/
   description: "Yash's personal website"
-  repo-url: https://github.com/ysurs/yashsurange.github.io
+  repo-url: https://github.com/ysurs/ysurs.github.io
   repo-actions: [edit, issue]
   open-graph: true
   google-analytics: "G-7QN8N70N41"
