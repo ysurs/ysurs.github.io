@@ -3,7 +3,7 @@ project:
   output-dir: docs
 website:
   title: "Yash Surange"
-  site-url: https://yashsurange.com/
+  site-url: https://ysurs.github.io/
   description: "Yash's personal website"
   repo-url: https://github.com/ysurs/yashsurange.github.io
   repo-actions: [edit, issue]

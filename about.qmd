@@ -14,10 +14,10 @@ about:
       href: https://www.linkedin.com/in/yash-surange-589303171/
     #- icon: medium
     #  text: Medium
-    #  href: https://medium.com/@aayushmnit
+    #  href: 
     #- icon: mastodon
     #  text: Mastodon
-    #  href: https://sigmoid.social/@aayushmnit
+    #  href: 
     - icon: twitter
       text: Twitter
       href: https://twitter.com/surange_yash007

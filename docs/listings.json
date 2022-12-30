@@ -6,5 +6,9 @@
   {
     "listing": "/blog.html",
     "items": []
+  },
+  {
+    "listing": "/talks.html",
+    "items": []
   }
 ]

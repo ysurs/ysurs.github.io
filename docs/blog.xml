@@ -6,8 +6,8 @@
       version="2.0">
 <channel>
 <title>Yash Surange</title>
-<link>https://yashsurange.com/blog.html</link>
-<atom:link href="https://yashsurange.com/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://ysurs.github.io/blog.html</link>
+<atom:link href="https://ysurs.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Yash's personal website</description>
 <generator>quarto-1.1.251</generator>
 <lastBuildDate>Fri, 30 Dec 2022 10:44:45 GMT</lastBuildDate>
