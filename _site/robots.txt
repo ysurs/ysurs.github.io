@@ -1,1 +1,1 @@
-Sitemap: https://yashsurange.github.io/quarto-blog/sitemap.xml
+Sitemap: https://ysurs.github.io/quarto-blog/sitemap.xml
