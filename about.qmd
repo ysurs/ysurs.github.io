@@ -1,0 +1,85 @@
+---
+title: "Yash Surange"
+about:
+  template: solana
+  #image: headshot.jpg
+  image-width: 10em
+  image-shape: round
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/ysurs
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/yash-surange-589303171/
+    #- icon: medium
+    #  text: Medium
+    #  href: https://medium.com/@aayushmnit
+    #- icon: mastodon
+    #  text: Mastodon
+    #  href: https://sigmoid.social/@aayushmnit
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/surange_yash007
+    - icon: envelope
+      text: Email
+      href: mailto:surangeyash007@gmail.com
+comments: false
+page-layout: full
+---
+
+::::{.panel-tabset}
+
+# Experience
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Univ.AI, Bengaluru, India**  
+*Teaching Assitant*
+:::
+::: {.text-end}
+April 2022 - Present
+:::
+:::
+- I have been working on developing course content and helping the instructors to teach the course materials to 90+ students.
+- My work comprises of building coding exercises, clarifying student doubts.
+
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Athenahealth, Bengaluru, India**  
+*Associate Member of Technical Staff*
+:::
+::: {.text-end}
+August 2021 - July 2022
+:::
+:::
+- I worked on automation of test scripts for company's core products: athenahFlow and athenaPractice.
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Athenahealth, Bengaluru, India**  
+*Intern*
+:::
+::: {.text-end}
+January 2021 - July 2021
+:::
+:::
+- I contributed to the migration of performance engineering scripts from LoadRunner to JMeter for both: athenaPractice and athenaFlow.
+
+
+# Education
+
+
+::: {.d-flex .justify-content-between}
+::: {}
+**RVCE, Bengaluru, India**  
+*Bachelor of Technology in Computer Science* | **GPA:** 8.2/10
+:::
+::: {.text-end}
+July 2021
+:::
+:::
+
+
+::::

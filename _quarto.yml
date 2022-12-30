@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: docs
+website:
+  title: "Yash Surange"
+  site-url: https://yashsurange.com/
+  description: "Yash's personal website"
+  repo-url: https://github.com/ysurs/yashsurange.github.io
+  repo-actions: [edit, issue]
+  open-graph: true
+  google-analytics: "G-7QN8N70N41"
+  twitter-card:
+    creator: "@yashs"
+    card-style: summary_large_image
+  navbar:
+    pinned: True
+    left:
+      - icon: house
+        href: index.qmd
+        text: Home
+      - icon: newspaper
+        href: blog.qmd
+        text: Blogs
+      # - icon: megaphone
+      #   href: talks.qmd
+      #   text: Talks
+      - icon: file-person
+        href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/ysurs
+      - icon: linkedin
+        href: https://www.linkedin.com/in/yash-surange-589303171/
+      #- icon: medium
+      #  href: 
+      #- icon: mastodon
+      #  href: 
+      - icon: twitter
+        href: https://twitter.com/surange_yash007
+      #- icon: envelope
+      #  href: 
+      #- icon: rss
+      #  href: blog.xml
+
+format:
+  html:
+    theme: 
+      light: sans-serif
+      dark: cyborg
+    mainfont: Roboto
+    css: styles.css
+    toc: true
+
+
+

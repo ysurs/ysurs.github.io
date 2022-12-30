@@ -1,0 +1,62 @@
+---
+title: Welcome to my universe !!
+comments: False
+format:
+  html:
+    page-layout: full
+listing:
+  - id: landing-posts
+    contents: posts
+    type: default
+    max-items: 3
+    sort: 
+      - "date desc"
+      - "title asc"
+about:
+  id: about-me
+  template: solana
+  #image: headshot.jpg
+  image-shape: round
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/yash-surange-589303171/
+    - icon: github
+      text: GitHub
+      href: https://github.com/ysurs
+    # - icon: medium
+    #   text: Medium
+    #   href:  
+    # - icon: mastodon
+    #   text: Mastodon
+    #   href: 
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/surange_yash007
+    - icon: clipboard-data
+      text: Kaggle
+      href: https://www.kaggle.com/ysurange
+    - icon: envelope
+      text: Email
+      href: surangeyash007@gmail.com
+---
+
+:::{#about-me}
+I have experience working in industry as well academic environments. My work in industry primarily dealt with automation. In the academic setting, I have experience working as a teaching assistant wherein I assisted in delivering content to 90+ students.
+
+I am currently working as a teaching assistant and I do all this intending to help people understand concepts and at the same time get more clarity on the AI concepts.
+
+My interest lies in applying AI in helping to understand the human brain and I hope to work towards a cause that could change the lives of millions.
+
+Read more about me [here](about.qmd).
+:::
+
+:::::{.grid}
+::::{.g-col-12 .g-col-md-12}
+## Latest Blogs
+Click [here](blog.qmd) to check out more blogs.
+
+:::{#landing-posts}
+:::
+::::
+:::::
