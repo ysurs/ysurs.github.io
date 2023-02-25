@@ -10,6 +10,23 @@
 <atom:link href="https://ysurs.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Yash's personal website</description>
 <generator>quarto-1.1.251</generator>
-<lastBuildDate>Fri, 30 Dec 2022 10:44:45 GMT</lastBuildDate>
+<lastBuildDate>Fri, 24 Feb 2023 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>Continous learning- polishing basics with karpathy</title>
+  <dc:creator>Yash Surange</dc:creator>
+  <link>https://ysurs.github.io/posts/2023-02-25-Continous_learning.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I am currently following along with karpathy, completing the video series and completing the exercises in order to polish my fundamentals in neural networks. This has helped me gain a deeper understanding of backpropagation, batchnormalization and it helped me better understand the internals of pytorch. My journey can be found on my <a href="https://github.com/ysurs/nn_with_karpathy">github repository</a></p>
+
+
+
+ ]]></description>
+  <category>Fundamentals of neural networks</category>
+  <guid>https://ysurs.github.io/posts/2023-02-25-Continous_learning.html</guid>
+  <pubDate>Fri, 24 Feb 2023 18:30:00 GMT</pubDate>
+</item>
 </channel>
 </rss>

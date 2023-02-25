@@ -18,14 +18,14 @@
     "href": "index.html#latest-blogs",
     "title": "Welcome to my universe !!",
     "section": "Latest Blogs",
-    "text": "Latest Blogs\nClick here to check out more blogs.\n\n\n\n\n\nNo matching items"
+    "text": "Latest Blogs\nClick here to check out more blogs.\n\n\n\n\n\n\nContinous learning- polishing basics with karpathy\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2023\n\n\nYash Surange\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blogs",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\n\n0 min\n\n\n\nFundamentals of neural networks\n\n\n\n\n\n\n\nFeb 25, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "talks.html",
@@ -33,5 +33,12 @@
     "title": "Talks",
     "section": "",
     "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2023-02-25-Continous_learning.html",
+    "href": "posts/2023-02-25-Continous_learning.html",
+    "title": "Continous learning- polishing basics with karpathy",
+    "section": "",
+    "text": "I am currently following along with karpathy, completing the video series and completing the exercises in order to polish my fundamentals in neural networks. This has helped me gain a deeper understanding of backpropagation, batchnormalization and it helped me better understand the internals of pytorch. My journey can be found on my github repository"
   }
 ]
