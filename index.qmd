@@ -46,7 +46,6 @@ I have experience working in industry as well academic environments. My work in 
 
 I am currently working as a teaching assistant and I do all this intending to help people understand concepts and at the same time get more clarity on the AI concepts.
 
-<!-- My interest lies in applying AI in helping to understand the human brain and I hope to work towards a cause that could change the lives of millions. -->
 
 Read more about me [here](about.qmd).
 :::
