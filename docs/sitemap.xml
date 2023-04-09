@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ysurs.github.io/index.html</loc>
-    <lastmod>2023-04-09T09:03:21.436Z</lastmod>
+    <lastmod>2023-04-09T09:24:24.802Z</lastmod>
   </url>
   <url>
     <loc>https://ysurs.github.io/talks.html</loc>
@@ -18,10 +18,14 @@
   </url>
   <url>
     <loc>https://ysurs.github.io/blog.html</loc>
-    <lastmod>2023-04-09T09:03:21.973Z</lastmod>
+    <lastmod>2023-04-09T09:24:25.504Z</lastmod>
   </url>
   <url>
     <loc>https://ysurs.github.io/posts/2023-02-25-nn_with_karpathy/2023-02-25-Continous_learning.html</loc>
     <lastmod>2023-04-09T09:03:20.556Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ysurs.github.io/posts/2023-04-9- Paper_implementation_1_adapter/adapter.html</loc>
+    <lastmod>2023-04-09T09:24:24.209Z</lastmod>
   </url>
 </urlset>

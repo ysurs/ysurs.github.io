@@ -10,7 +10,23 @@
 <atom:link href="https://ysurs.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Yash's personal website</description>
 <generator>quarto-1.1.251</generator>
-<lastBuildDate>Fri, 24 Feb 2023 18:30:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 08 Apr 2023 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>Decoding paper - Parameter-Efficient Transfer Learning for NLP</title>
+  <dc:creator>Yash Surange</dc:creator>
+  <link>https://ysurs.github.io/posts/2023-04-9- Paper_implementation_1_adapter/adapter.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+ ]]></description>
+  <category>Paper implementations</category>
+  <guid>https://ysurs.github.io/posts/2023-04-9- Paper_implementation_1_adapter/adapter.html</guid>
+  <pubDate>Sat, 08 Apr 2023 18:30:00 GMT</pubDate>
+</item>
 <item>
   <title>Continous learning- polishing basics with karpathy</title>
   <dc:creator>Yash Surange</dc:creator>
