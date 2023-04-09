@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -94,10 +94,16 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Yash Surange - Welcome to my universe !!">
+<meta property="og:image" content="https://ysurs.github.io/posts/2023-02-25-nn_with_karpathy/cover.png">
 <meta property="og:site-name" content="Yash Surange">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:width" content="1024">
 <meta name="twitter:title" content="Yash Surange - Welcome to my universe !!">
+<meta name="twitter:image" content="https://ysurs.github.io/posts/2023-02-25-nn_with_karpathy/cover.png">
 <meta name="twitter:creator" content="@yashs">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="1024">
+<meta name="twitter:image-width" content="1024">
 </head>
 
 <body class="nav-fixed">
@@ -207,9 +213,12 @@ ul.task-list li input[type="checkbox"] {
 <p>Click <a href="./blog.html">here</a> to check out more blogs.</p>
 <div id="listing-landing-posts" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Fundamentals of neural networks" data-listing-date-sort="1677263400000" data-listing-file-modified-sort="1677309533644" data-listing-reading-time-sort="0.27">
+<div class="quarto-post image-right" data-index="0" data-categories="Fundamentals of neural networks" data-listing-date-sort="1677263400000" data-listing-file-modified-sort="1681029996746" data-listing-reading-time-sort="0.275">
+<div class="thumbnail">
+<p><a href="./posts/2023-02-25-nn_with_karpathy/2023-02-25-Continous_learning.html"> <img src="./posts/2023-02-25-nn_with_karpathy/cover.png" class="thumnail-image"> </a></p>
+</div>
 <div class="body">
-<a href="./posts/2023-02-25-Continous_learning.html">
+<a href="./posts/2023-02-25-nn_with_karpathy/2023-02-25-Continous_learning.html">
 <h3 class="no-anchor listing-title">
 Continous learning- polishing basics with karpathy
 </h3>
@@ -222,7 +231,7 @@ I am currently following along with karpathy, completing the video series and co
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-02-25-Continous_learning.html">
+<a href="./posts/2023-02-25-nn_with_karpathy/2023-02-25-Continous_learning.html">
 <div class="listing-date">
 Feb 25, 2023
 </div>
