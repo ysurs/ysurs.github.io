@@ -127,7 +127,17 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lets-begin" id="toc-lets-begin" class="nav-link active" data-scroll-target="#lets-begin"><span class="toc-section-number">1</span>  Lets begin 🏁</a>
+  <ul class="collapse">
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract"><span class="toc-section-number">1.0.1</span>  Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="toc-section-number">1.0.2</span>  Introduction</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.dev/ysurs/ysurs.github.io/blob/main/posts/2023-04-9- Paper_implementation_1_adapter/adapter.ipynb" class="toc-action">Edit this page</a></p><p><a href="https://github.com/ysurs/ysurs.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -136,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title">
 <h1 class="title">Decoding paper - Parameter-Efficient Transfer Learning for NLP</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Paper implementations</div>
+    <div class="quarto-category">Paper explanation</div>
   </div>
   </div>
 
@@ -163,8 +173,36 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<blockquote class="blockquote">
+<p>This is the start of something great. It is my first paper analysis. I have also tried to implement this paper before writing summary. The idea is to get better at understanding and implementing papers.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>I will be discussing about the paper : <a href="https://arxiv.org/pdf/1902.00751.pdf">Parameter efficient transfer learning for NLP</a>. I will be going through each section of the paper and will be writing my understanding of the same. If you find any problems, don’t hesitate to contact me.</p>
+</blockquote>
+<section id="lets-begin" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Lets begin 🏁</h1>
+<section id="abstract" class="level3" data-number="1.0.1">
+<h3 data-number="1.0.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">1.0.1</span> Abstract</h3>
+<p>Authors note that fine tuning of pretrained models is an efficient way of transfer learning in NLP. Transfer learning becomes parameter inefficient when the number of downstream tasks increase as for each task, a new model has to be created. To make this parameter efficient, authors propose to use adapter modules for efficient transfer learning.</p>
+<p>For each new task, adapters add very few trainable parameters and the parameters of the pretrained model remain unchanged. To demonstrate the effectiveness of this approach, the authors transfer BERT to 26 text classification tasks and achieve within 0.4% of the performance after full fine tuning. Only 3.6% parameters were added per task.</p>
+<blockquote class="blockquote">
+<h4 id="points-to-note" data-number="1.0.1.1" class="anchored"><span class="header-section-number">1.0.1.1</span> <strong>Points to note:</strong></h4>
+</blockquote>
+<pre><code>There are different methods of transfer learning in NLP. These are as follows:
+
+1. Training the entire architecture (Full fine tuning): The pretrained model is trained in entirety. All the trainable parameters are updated during backpropogation.
+
+2. Training some layers and freezing others: Freezing of the initial layers and training of the later layers. In this case, we have to experimentally determine which layers to be frozen.
+
+3. Freezing the entire architecture: We freeze all the layers of the architecture and add new layers on top of them. We train only the additional layers.</code></pre>
+</section>
+<section id="introduction" class="level3" data-number="1.0.2">
+<h3 data-number="1.0.2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.0.2</span> Introduction</h3>
+<p>In this paper, the authors have targeted the <strong>online setting</strong>. In this setting tasks arrive in a stream. A better way to understand this is by taking an example. The example is that of <strong>google translate</strong>. The process involves detection of language, translation of language. These tasks have to be performed on the go. Logically, we would want models to require <strong>minimum number of extra parameters</strong> to adapt to new task. We also want to make sure that information about the tasks is <strong>not lost</strong> when we train on new tasks.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
