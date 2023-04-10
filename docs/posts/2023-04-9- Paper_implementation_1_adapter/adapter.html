@@ -177,27 +177,36 @@ ul.task-list li input[type="checkbox"] {
 <p>This is the start of something great. It is my first paper analysis. I have also tried to implement this paper before writing summary. The idea is to get better at understanding and implementing papers.</p>
 </blockquote>
 <blockquote class="blockquote">
-<p>I will be discussing about the paper : <a href="https://arxiv.org/pdf/1902.00751.pdf">Parameter efficient transfer learning for NLP</a>. I will be going through each section of the paper and will be writing my understanding of the same. If you find any problems, don’t hesitate to contact me.</p>
+<p>I will be discussing about the paper : <a href="https://arxiv.org/pdf/1902.00751.pdf">Parameter efficient transfer learning for NLP</a>. I will be going through the intuition behind the paper and will be writing my understanding of the same. If you find any problems, don’t hesitate to contact me.</p>
 </blockquote>
 <section id="lets-begin" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Lets begin 🏁</h1>
 <section id="abstract" class="level3" data-number="1.0.1">
 <h3 data-number="1.0.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">1.0.1</span> Abstract</h3>
 <p>Authors note that fine tuning of pretrained models is an efficient way of transfer learning in NLP. Transfer learning becomes parameter inefficient when the number of downstream tasks increase as for each task, a new model has to be created. To make this parameter efficient, authors propose to use adapter modules for efficient transfer learning.</p>
-<p>For each new task, adapters add very few trainable parameters and the parameters of the pretrained model remain unchanged. To demonstrate the effectiveness of this approach, the authors transfer BERT to 26 text classification tasks and achieve within 0.4% of the performance after full fine tuning. Only 3.6% parameters were added per task.</p>
+<p>For each new task, adapters add very few trainable parameters and the parameters of the pretrained model remain unchanged. To demonstrate the effectiveness of this approach, the authors transfer BERT to 26 text classification tasks and achieve within 0.4% of the performance after full fine tuning. Only 3.6% parameters were added per task.<br></p>
 <blockquote class="blockquote">
 <h4 id="points-to-note" data-number="1.0.1.1" class="anchored"><span class="header-section-number">1.0.1.1</span> <strong>Points to note:</strong></h4>
 </blockquote>
 <p>There are different methods of transfer learning in NLP. These are as follows:</p>
 <ol type="1">
-<li><p>Training the entire architecture (Full fine tuning): The pretrained model is trained in entirety. All the trainable parameters are updated during backpropogation.</p></li>
-<li><p>Training some layers and freezing others: Freezing of the initial layers and training of the later layers. In this case, we have to experimentally determine which layers to be frozen.</p></li>
-<li><p>Freezing the entire architecture: We freeze all the layers of the architecture and add new layers on top of them. We train only the additional layers.</p></li>
+<li><p><strong>Training the entire architecture (Full fine tuning)</strong>: The pretrained model is trained in entirety. All the trainable parameters are updated during backpropogation.</p></li>
+<li><p><strong>Training some layers and freezing others</strong>: Freezing of the initial layers and training of the later layers. In this case, we have to experimentally determine which layers to be frozen.</p></li>
+<li><p><strong>Freezing the entire architecture</strong>: We freeze all the layers of the architecture and add new layers on top of them. We train only the additional layers. <br></p></li>
 </ol>
+<p><em>Reference</em> : <a href="https://www.analyticsvidhya.com/blog/2020/07/transfer-learning-for-nlp-fine-tuning-bert-for-text-classification/">Transfer Learning for NLP: Fine-Tuning BERT for Text Classification</a></p>
 </section>
 <section id="introduction" class="level3" data-number="1.0.2">
 <h3 data-number="1.0.2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.0.2</span> Introduction</h3>
 <p>In this paper, the authors have targeted the <strong>online setting</strong>. In this setting tasks arrive in a stream. A better way to understand this is by taking an example. The example is that of <strong>google translate</strong>. The process involves detection of language, translation of language. These tasks have to be performed on the go. Logically, we would want models to require <strong>minimum number of extra parameters</strong> to adapt to new task. We also want to make sure that information about the tasks is <strong>not lost</strong> when we train on new tasks.</p>
+<p>Proposed adapter modules are added <strong>in between layers of pretrained models</strong>.</p>
+<p>The authors introduce the concept behind adapter based fine tuning by first explaining two common methods of transfer learning: feature based transfer learning and fine tuning.</p>
+<p>Let’s look at equations to understand feature based transfer learning, fine tuning and adapter based fine tuning.</p>
+<ol type="1">
+<li><p><strong>Feature based transfer learning</strong> : Consider a function φ𝓌(x) (a neural network). This method generates a composition of functions where it composed φ𝓌 with function 𝓧𝓋 to produce 𝓧𝓋(φ𝓌(x)). Only the new parameters 𝓋 are trained.</p></li>
+<li><p><strong>Fine tuning</strong>: For each new task, original parameters 𝓌 are updated.</p></li>
+<li><p><strong>Adapter based fine tuning</strong>: 𝜓𝓌,𝓋 is created where 𝓌 are taken from pretrained model. Initialisation of parameters 𝓋 is done such that this new function 𝜓𝓌,𝓋(x) ≈ φ𝓌(x). Only 𝓋 parameters are changed during training.Authors also note that if |𝓋| &lt;&lt; |𝓌|, then many tasks will require only |𝓌| parameters. Adapter based fine tuning thus enables model to be extended to many tasks without affecting previous ones.</p></li>
+</ol>
 
 
 </section>
