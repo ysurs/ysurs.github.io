@@ -8,7 +8,7 @@ website:
   repo-url: https://github.com/ysurs/ysurs.github.io
   repo-actions: [edit, issue]
   open-graph: true
-  #google-analytics: ""
+  google-analytics: "G-K348J80H5C"
   twitter-card:
     creator: "@yashs"
     card-style: summary_large_image
