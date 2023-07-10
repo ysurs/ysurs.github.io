@@ -8,7 +8,7 @@ website:
   repo-url: https://github.com/ysurs/ysurs.github.io
   repo-actions: [edit, issue]
   open-graph: true
-  #google-analytics: "G-7QN8N70N41"
+  #google-analytics: ""
   twitter-card:
     creator: "@yashs"
     card-style: summary_large_image
@@ -46,9 +46,9 @@ website:
 format:
   html:
     theme: 
-      light: sans-serif
+      light: sandstone
       dark: cyborg
-    mainfont: Roboto
+    mainfont: Times New Roman
     css: styles.css
     toc: true
 

@@ -3,11 +3,11 @@ title: "Blogs"
 listing:
   contents: posts
   sort: "date desc"
-  type: grid
+  type: table
   categories: true
   sort-ui: true
   filter-ui: true
-  fields: [date, description, title, categories, image]
+  fields: [date, title, categories]
   feed: true
 page-layout: full
 title-block-banner: false

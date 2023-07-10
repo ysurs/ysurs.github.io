@@ -1,5 +1,5 @@
 ---
-title: Welcome to my universe !!
+title: Welcome!!
 comments: False
 format:
   html:
@@ -42,12 +42,10 @@ about:
 ---
 
 :::{#about-me}
-I have experience working in industry as well academic environments. My work in industry primarily dealt with automation. In the academic setting, I have experience working as a teaching assistant wherein I assisted in delivering content to 90+ students.
+I currently work as a research assistant at [StellarDNN Lab](https://www.stellardnn.org/). I have experience working in industrial and teaching environments in the past. In my industrial role at Athenahealth, I primarily worked on test automation.
+My teaching role was at [Univ.AI](https://www.univ.ai/) where I assisted in developing AI courses.
 
-I am currently working as a teaching assistant and I do all this intending to help people understand concepts and at the same time get more clarity on the AI concepts.
-
-
-Read more about me [here](about.qmd).
+You can read more about me and my work [here](about.qmd).
 :::
 
 :::::{.grid}

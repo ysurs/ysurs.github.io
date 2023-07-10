@@ -34,15 +34,31 @@ page-layout: full
 
 ::: {.d-flex .justify-content-between}
 ::: {}
-**Univ.AI, Bengaluru, India**  
+**[StellarDNN Lab](https://www.stellardnn.org/), Harvard**  
+*Research Assistant*
+:::
+::: {.text-end}
+Sep 2022 - Present
+:::
+:::
+- I am working on the application of ASTROMER architecture proposed [here](https://arxiv.org/pdf/2205.01677.pdf) on spectral data derived from stars, galaxies and quasars. Currently, my aim is to extract spectra embeddings by training ASTROMER in a self supervised manner.
+
+
+::: {.d-flex .justify-content-between}
+::: {}
+**[Univ.AI](https://www.univ.ai/), Bengaluru, India**  
 *Teaching Assitant*
 :::
 ::: {.text-end}
-April 2022 - Present
+May 2022 - Present
 :::
 :::
-- I have been working on developing course content and helping the instructors to teach the course materials to 90+ students.
-- My work comprises of building coding exercises, clarifying student doubts.
+- As a teaching assistant, I have helped in course content development for the following courses: AI Basics , Data Science Basics , Convolutional Neural Networks , Language models. 
+
+- My role involved the following:
+  1. Content development (theory)- Addition and simplification of concepts for more efficient delivery.
+  2. Content development (practice)- Refinement of labs, exercises related to theory sessions.
+  3. Doubt clearance- Answering student doubts on forum (ed), guiding students during lab hours.
 
 
 ::: {.d-flex .justify-content-between}
@@ -54,7 +70,14 @@ April 2022 - Present
 August 2021 - July 2022
 :::
 :::
-- I worked on automation of test scripts for company's core products: athenahFlow and athenaPractice.
+- I worked as part of test automation team in which I contributed in writing test automation scripts for:
+
+  1. Forms meant to be used by providers to collect health information from patients. 
+  2. Workflows to keep track of the vaccination history of patients.
+  2. Workflows to add medications to a patient's electronic health record (EHR).
+  3. Workflows to help providers generate medical bills for patients.
+  4. Workflow to refer patients to other providers for further treatment.
+- This work was done using C#.
 
 ::: {.d-flex .justify-content-between}
 ::: {}
@@ -74,12 +97,92 @@ January 2021 - July 2021
 ::: {.d-flex .justify-content-between}
 ::: {}
 **RVCE, Bengaluru, India**  
-*Bachelor of Technology in Computer Science* | **GPA:** 8.2/10
+*Bachelor of Technology in Computer Science*
 :::
 ::: {.text-end}
-July 2021
+2017-2021
 :::
 :::
 
 
+# Projects
+
+::: {.d-flex .justify-content-between}
+::: {}
+**[Vision Transformer Implementation](https://github.com/ysurs/Vit)**  
+:::
+::: {.text-end}
+:::
+:::
+  - **Aim**: This project aims to implement Vision transformer paper from scratch in Pytorch.
+
+  - **Motivation**: The motivation behind this project was to get a deeper understanding of vision transformer architecture. It was also intended to impart a better grasp on replicating research papers.
+
+  - **Dataset**: MNIST. 
+
+  - **Improvements**: Additional things to add: W&B integration, aim for better test accuracy, and code optimization.
+
+  - **Note about implementation**: This implementation was solely meant for learning purposes. This is reflected in the comments supporting lines of code.
+
+****************************************************************
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Astrospec**  
+:::
+::: {.text-end}
+Ongoing
+:::
+:::
+  - **Aim**: To extract spectra embeddings by training [ASTROMER](https://arxiv.org/pdf/2205.01677.pdf) in a self supervised manner.
+
+  - **Dataset**: Custom dataset containing stars, galaxies and quasars from [SDSS DR17](https://www.sdss4.org/dr17/). 
+
+****************************************************************
+
+::: {.d-flex .justify-content-between}
+::: {}
+**[Telco customer churn Prediction](https://github.com/ysurs/Telco-Churn-prediction)**  
+:::
+::: {.text-end}
+:::
+:::
+  - **About**: This project was aimed at exploring data, doing a comparative analysis of ML models based on their ability to correctly classify churn customers. 
+
+  - **Importance**: Businesses want to maximize their revenue. It is generally easier for a business to retain customers than to onboard new ones. To grow their revenue, businesses must target new customers but also make sure that churn is minimized. If they can identify potential churn customers, they can run programs to retain them.
+
+  - **Dataset**: In this project, an imbalanced dataset is used. This closely mimics the real world.
+
+  - **Algorithms used**: 
+    - Categorical Naive Bayes 
+    - KNN
+    - Logistic Regression
+    - Random Forest
+    - Decision Tree
+    - Decision Tree with Bagging
+    - Adaboost
+    - XGBoost.
+  
+  - **Metric used**: F1-score is used because we are dealing with an imbalanced class classification problem.
+
+****************************************************************
+
+::: {.d-flex .justify-content-between}
+::: {}
+**[From scratch implementations](https://github.com/ysurs/From_scratch_implementations)**  
+:::
+::: {.text-end}
+:::
+:::
+  - **About**: This project contains some of the most popular algorithms implemented in python only. I took inspiration from open source code repositories to code these algorithms. 
+
+  - **Importance**: It is always important to code things from scratch to develop a deep understanding of concepts. I plan to continue adding algorithms to this project.
+
+  - **Algorithms implemented**: 
+    - KNN
+    - Logistic Regression
+    - Linear Regression
+    - Decision Tree
+    - Kmeans clustering
+  
 ::::
