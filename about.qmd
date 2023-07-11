@@ -134,9 +134,12 @@ January 2021 - July 2021
 Ongoing
 :::
 :::
-  - **Aim**: To extract spectra embeddings by training [ASTROMER](https://arxiv.org/pdf/2205.01677.pdf) in a self supervised manner.
+  - **Aim**: To extract general representations of millions of stars, galaxies and quasars by training a self supervised transformer: [ASTROMER](https://arxiv.org/pdf/2205.01677.pdf).
 
   - **Dataset**: Custom dataset containing stars, galaxies and quasars from [SDSS DR17](https://www.sdss4.org/dr17/). 
+
+  - **Significance**: The representations obtained from ASTROMER model speed up training of downstream tasks such as classification of variable stars, galaxies and quasars.
+
 
 ****************************************************************
 
