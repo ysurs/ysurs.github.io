@@ -58,6 +58,15 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-K348J80H5C"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-K348J80H5C', { 'anonymize_ip': true});
+</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -86,9 +95,6 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html">Home</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./blog.html">Blogs</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./about.html" aria-current="page">About</a>
@@ -256,8 +262,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ul>
-<li><p><strong>Aim</strong>: To extract spectra embeddings by training <a href="https://arxiv.org/pdf/2205.01677.pdf">ASTROMER</a> in a self supervised manner.</p></li>
+<li><p><strong>Aim</strong>: To extract general representations of millions of stars, galaxies and quasars by training a self supervised transformer: <a href="https://arxiv.org/pdf/2205.01677.pdf">ASTROMER</a>.</p></li>
 <li><p><strong>Dataset</strong>: Custom dataset containing stars, galaxies and quasars from <a href="https://www.sdss4.org/dr17/">SDSS DR17</a>.</p></li>
+<li><p><strong>Significance</strong>: The representations obtained from ASTROMER model speed up training of downstream tasks such as classification of variable stars, galaxies and quasars.</p></li>
 </ul>
 <hr>
 <div class="d-flex justify-content-between">

@@ -29,8 +29,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,35 +58,6 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-landing-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-landing-posts'] = new List('listing-landing-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-K348J80H5C"></script>
 
 <script type="text/javascript">
@@ -99,20 +68,13 @@ gtag('js', new Date());
 gtag('config', 'G-K348J80H5C', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Yash Surange - Welcome!!">
-<meta property="og:image" content="https://ysurs.github.io/posts/2023-02-25-nn_with_karpathy/cover.png">
 <meta property="og:site-name" content="Yash Surange">
-<meta property="og:image:height" content="1024">
-<meta property="og:image:width" content="1024">
 <meta name="twitter:title" content="Yash Surange - Welcome!!">
-<meta name="twitter:image" content="https://ysurs.github.io/posts/2023-02-25-nn_with_karpathy/cover.png">
 <meta name="twitter:creator" content="@yashs">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="1024">
-<meta name="twitter:image-width" content="1024">
 </head>
 
 <body class="nav-fixed">
@@ -133,12 +95,6 @@ gtag('config', 'G-K348J80H5C', { 'anonymize_ip': true});
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page">Home</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./blog.html">Blogs</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html">About</a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -208,87 +164,199 @@ gtag('config', 'G-K348J80H5C', { 'anonymize_ip': true});
   </a>
 </div>
       <div class="about-contents"><div id="about-me">
-<p>I currently work as a research assistant at <a href="https://www.stellardnn.org/">StellarDNN Lab</a>. I have experience working in industrial and teaching environments in the past. In my industrial role at Athenahealth, I primarily worked on test automation. My teaching role was at <a href="https://www.univ.ai/">Univ.AI</a> where I assisted in developing AI courses.</p>
-<p>You can read more about me and my work <a href="./about.html">here</a>.</p>
+<p>I am currently working as a Junior Research Fellow at IIT, Delhi. My current research work involves application of deep learning techniques on glaucoma detection. I am working in collaboration with AIIMS, Delhi. I also have past research experience at <a href="https://www.stellardnn.org/">StellarDNN Lab</a> where I worked on application of AI on astronomical data.</p>
+<p>I also have experience working in industrial and teaching environments in the past. In my industrial role at Athenahealth, I primarily worked on test automation. My teaching role was at <a href="https://www.univ.ai/">Univ.AI</a> where I assisted in developing AI courses.</p>
+<p>My fascination in AI grew as I wanted to decode the human mind. This is also one of the motivating factors to keep the grind going!!</p>
+<p>In my free time, I watch football and I do like watching TV shows.</p>
+<!-- You can read more about me and my work [here](about.qmd). -->
 </div></div>
     </div>
+    <img src="headshot.jpg" class="about-image
+  round " style="height: 15em; width: 15em;">
   </div>
 </div>
 
-<div class="grid">
-<section id="latest-blogs" class="level2 g-col-12 g-col-md-12">
-<h2 data-anchor-id="latest-blogs">Latest Blogs</h2>
-<p>Click <a href="./blog.html">here</a> to check out more blogs.</p>
-<div id="listing-landing-posts" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Paper explanation" data-listing-date-sort="1680978600000" data-listing-file-modified-sort="1688979309531" data-listing-reading-time-sort="2.565">
-<div class="thumbnail">
-<a href="./posts/2023-04-9- Paper_implementation_1_adapter/adapter.html">
-<div class="thumbnail-image">
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Experience</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Education</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Projects</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Neurocomputing Lab, IIT Delhi, India</strong><br>
+<em>Junior Research Fellow</em></p>
+</div>
+<div class="text-end">
+<p>Auguest 2023 - Present</p>
+</div>
+</div>
+<ul>
+<li>Leading the development of a deep learning model for predicting visual field charts from eye-tracking sequential data retrieved from normal and patients with glaucoma.</li>
+<li>Conducted analysis of eye tracking data, employed interpolation methods for handling missing values, and used filters for improving data quality. Developed an initial prototype model combining both language and vision models.</li>
+<li>Currently experimenting with transformer architecture on this use-case.</li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong><a href="https://www.stellardnn.org/">StellarDNN Lab</a>, Harvard</strong><br>
+<em>Research Assistant</em></p>
+</div>
+<div class="text-end">
+<p>Sep 2022 - Present</p>
+</div>
+</div>
+<ul>
+<li>I am working on the application of ASTROMER architecture proposed <a href="https://arxiv.org/pdf/2205.01677.pdf">here</a> on spectral data derived from stars, galaxies and quasars. Currently, my aim is to extract spectra embeddings by training ASTROMER in a self supervised manner.</li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong><a href="https://www.univ.ai/">Univ.AI</a>, Bengaluru, India</strong><br>
+<em>Teaching Assitant</em></p>
+</div>
+<div class="text-end">
+<p>May 2022 - Present</p>
+</div>
+</div>
+<ul>
+<li><p>As a teaching assistant, I have helped in course content development for the following courses: AI Basics , Data Science Basics , Convolutional Neural Networks , Language models.</p></li>
+<li><p>My role involved the following:</p>
+<ol type="1">
+<li>Content development (theory)- Addition and simplification of concepts for more efficient delivery.</li>
+<li>Content development (practice)- Refinement of labs, exercises related to theory sessions.</li>
+<li>Doubt clearance- Answering student doubts on forum (ed), guiding students during lab hours.</li>
+</ol></li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Athenahealth, Bengaluru, India</strong><br>
+<em>Associate Member of Technical Staff</em></p>
+</div>
+<div class="text-end">
+<p>August 2021 - July 2022</p>
+</div>
+</div>
+<ul>
+<li><p>I worked as part of test automation team in which I contributed in writing test automation scripts for:</p>
+<ol type="1">
+<li>Forms meant to be used by providers to collect health information from patients.</li>
+<li>Workflows to keep track of the vaccination history of patients.</li>
+<li>Workflows to add medications to a patient’s electronic health record (EHR).</li>
+<li>Workflows to help providers generate medical bills for patients.</li>
+<li>Workflow to refer patients to other providers for further treatment.</li>
+</ol></li>
+<li><p>This work was done using C#.</p></li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Athenahealth, Bengaluru, India</strong><br>
+<em>Intern</em></p>
+</div>
+<div class="text-end">
+<p>January 2021 - July 2021</p>
+</div>
+</div>
+<ul>
+<li>I contributed to the migration of performance engineering scripts from LoadRunner to JMeter for both: athenaPractice and athenaFlow.</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>RVCE, Bengaluru, India</strong><br>
+<em>Bachelor of Engineering in Computer Science</em></p>
+</div>
+<div class="text-end">
+<p>2017-2021</p>
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="d-flex justify-content-between">
+<div>
+<p><strong><a href="https://github.com/ysurs/Vit">Vision Transformer Implementation</a></strong></p>
+</div>
+<div class="text-end">
 
 </div>
-</a><p><a href="./posts/2023-04-9- Paper_implementation_1_adapter/adapter.html"></a></p>
 </div>
-<div class="body">
-<a href="./posts/2023-04-9- Paper_implementation_1_adapter/adapter.html">
-<h3 class="no-anchor listing-title">
-Decoding paper - Parameter-Efficient Transfer Learning for NLP
-</h3>
-<div class="listing-subtitle">
+<ul>
+<li><p><strong>Aim</strong>: This project aims to implement Vision transformer paper from scratch in Pytorch.</p></li>
+<li><p><strong>Motivation</strong>: The motivation behind this project was to get a deeper understanding of vision transformer architecture. It was also intended to impart a better grasp on replicating research papers.</p></li>
+<li><p><strong>Dataset</strong>: MNIST.</p></li>
+<li><p><strong>Improvements</strong>: Additional things to add: W&amp;B integration, aim for better test accuracy, and code optimization.</p></li>
+<li><p><strong>Note about implementation</strong>: This implementation was solely meant for learning purposes. This is reflected in the comments supporting lines of code.</p></li>
+</ul>
+<hr>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Astrospec</strong></p>
+</div>
+<div class="text-end">
+<p>Ongoing</p>
+</div>
+</div>
+<ul>
+<li><p><strong>Aim</strong>: To extract general representations of millions of stars, galaxies and quasars by training a self supervised transformer: <a href="https://arxiv.org/pdf/2205.01677.pdf">ASTROMER</a>.</p></li>
+<li><p><strong>Dataset</strong>: Custom dataset containing stars, galaxies and quasars from <a href="https://www.sdss4.org/dr17/">SDSS DR17</a>.</p></li>
+<li><p><strong>Significance</strong>: The representations obtained from ASTROMER model speed up training of downstream tasks such as classification of variable stars, galaxies and quasars.</p></li>
+</ul>
+<hr>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong><a href="https://github.com/ysurs/Telco-Churn-prediction">Telco customer churn Prediction</a></strong></p>
+</div>
+<div class="text-end">
 
 </div>
-<div class="listing-description">
-I will be discussing about the paper : Parameter efficient transfer learning for NLP. I will be going through the intuition behind the paper and will be writing my understanding of the same. If you find any problems, don’t hesitate to contact me.
 </div>
-</a>
+<ul>
+<li><p><strong>About</strong>: This project was aimed at exploring data, doing a comparative analysis of ML models based on their ability to correctly classify churn customers.</p></li>
+<li><p><strong>Importance</strong>: Businesses want to maximize their revenue. It is generally easier for a business to retain customers than to onboard new ones. To grow their revenue, businesses must target new customers but also make sure that churn is minimized. If they can identify potential churn customers, they can run programs to retain them.</p></li>
+<li><p><strong>Dataset</strong>: In this project, an imbalanced dataset is used. This closely mimics the real world.</p></li>
+<li><p><strong>Algorithms used</strong>:</p>
+<ul>
+<li>Categorical Naive Bayes</li>
+<li>KNN</li>
+<li>Logistic Regression</li>
+<li>Random Forest</li>
+<li>Decision Tree</li>
+<li>Decision Tree with Bagging</li>
+<li>Adaboost</li>
+<li>XGBoost.</li>
+</ul></li>
+<li><p><strong>Metric used</strong>: F1-score is used because we are dealing with an imbalanced class classification problem.</p></li>
+</ul>
+<hr>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong><a href="https://github.com/ysurs/From_scratch_implementations">From scratch implementations</a></strong></p>
 </div>
-<div class="metadata">
-<a href="./posts/2023-04-9- Paper_implementation_1_adapter/adapter.html">
-<div class="listing-date">
-Apr 9, 2023
-</div>
-<div class="listing-author">
-Yash Surange
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Fundamentals of neural networks" data-listing-date-sort="1677263400000" data-listing-file-modified-sort="1681038634259" data-listing-reading-time-sort="0.28">
-<div class="thumbnail">
-<p><a href="./posts/2023-02-25-nn_with_karpathy/2023-02-25-Continous_learning.html"> <img src="./posts/2023-02-25-nn_with_karpathy/cover.png" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2023-02-25-nn_with_karpathy/2023-02-25-Continous_learning.html">
-<h3 class="no-anchor listing-title">
-Continous learning- polishing basics with karpathy
-</h3>
-<div class="listing-subtitle">
+<div class="text-end">
 
 </div>
-<div class="listing-description">
-I will continue to following along with karpathy, completing the video series and completing the exercises in order to polish my fundamentals in neural networks. This has helped me gain a deeper understanding of backpropagation, batchnormalization and it helped me better understand the internals of pytorch. My journey can be found on my github repository
 </div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2023-02-25-nn_with_karpathy/2023-02-25-Continous_learning.html">
-<div class="listing-date">
-Feb 25, 2023
-</div>
-<div class="listing-author">
-Yash Surange
-</div>
-</a>
-</div>
+<ul>
+<li><p><strong>About</strong>: This project contains some of the most popular algorithms implemented in python only. I took inspiration from open source code repositories to code these algorithms.</p></li>
+<li><p><strong>Importance</strong>: It is always important to code things from scratch to develop a deep understanding of concepts. I plan to continue adding algorithms to this project.</p></li>
+<li><p><strong>Algorithms implemented</strong>:</p>
+<ul>
+<li>KNN</li>
+<li>Logistic Regression</li>
+<li>Linear Regression</li>
+<li>Decision Tree</li>
+<li>Kmeans clustering</li>
+</ul></li>
+</ul>
 </div>
 </div>
-<div class="listing-no-matching d-none">
-No matching items
 </div>
-</div>
-</section>
-</div>
+<!-- :::::{.grid}
+::::{.g-col-12 .g-col-md-12}
+## Latest Blogs
+Click [here](blog.qmd) to check out more blogs.
 
+:::{#landing-posts}
+:::
+::::
+::::: -->
 
 
 

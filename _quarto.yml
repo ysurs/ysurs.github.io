@@ -18,15 +18,15 @@ website:
       - icon: house
         href: index.qmd
         text: Home
-      - icon: newspaper
-        href: blog.qmd
-        text: Blogs
+      # - icon: newspaper
+        # href: blog.qmd
+        # text: Blogs
       # - icon: megaphone
       #   href: talks.qmd
       #   text: Talks
-      - icon: file-person
-        href: about.qmd
-        text: About
+      # - icon: file-person
+      #   href: about.qmd
+      #   text: About
     right:
       - icon: github
         href: https://github.com/ysurs
