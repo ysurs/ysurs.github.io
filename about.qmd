@@ -41,7 +41,17 @@ page-layout: full
 Sep 2022 - Present
 :::
 :::
-- I am working on the application of ASTROMER architecture proposed [here](https://arxiv.org/pdf/2205.01677.pdf) on spectral data derived from stars, galaxies and quasars. Currently, my aim is to extract spectra embeddings by training ASTROMER in a self supervised manner.
+<!-- - I am working on the application of ASTROMER architecture proposed [here](https://arxiv.org/pdf/2205.01677.pdf) on spectral data derived from stars, galaxies and quasars. Currently, my aim is to extract spectra embeddings by training ASTROMER in a self supervised manner. -->
+
+- Conducted an in-depth, code-centric analysis of the research paper: Astromer: A transformer-based embedding for the representation of light curves.
+
+- Conducted analysis of spectral data consisting of a sequence of pairs of flux and magnitude derived from stars, galaxies and quasars. Employed data visualization techniques using Matplotlib leading to insights that prompted improvements in the data-gathering process. Performed correlation and autocorrelation study to check the applicability of an autoregressive process on spectral data. This justified the application of Astromer on spectral data.
+
+- Developed a data-informed masking technique as part of the data-preprocessing pipeline of Astromer. This technique focused on the emission and absorption region of a spectrum which is in departure from the technique used in Astromer.
+
+- Enhanced the transformer architecture of Astromer resulting in improved performance in processing spectral data.
+
+- Leading the development efforts on this research project aimed at deriving spectral data embeddings from stars, galaxies, and quasars.
 
 
 ::: {.d-flex .justify-content-between}
